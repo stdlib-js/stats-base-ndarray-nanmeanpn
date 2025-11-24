@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,16 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the arithmetic mean of a one-dimensional ndarray, ignoring `NaN` values and using a two-pass error correction algorithm.
+* Computes the arithmetic mean of a one-dimensional ndarray, ignoring `NaN` values and using a two-pass error correction algorithm.
 *
-* @module @stdlib/stats-base-ndarray-nanmeanpn
+* @param arrays - array-like object containing an input ndarray
+* @returns arithmetic mean
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray-base-ctor' );
-* var nanmeanpn = require( '@stdlib/stats-base-ndarray-nanmeanpn' );
 *
 * var xbuf = [ 1.0, 3.0, NaN, 2.0 ];
 * var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -33,12 +37,9 @@
 * var v = nanmeanpn( [ x ] );
 * // returns 2.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function nanmeanpn<T extends ndarray = ndarray>( arrays: [ T ] ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = nanmeanpn;
