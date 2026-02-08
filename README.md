@@ -63,7 +63,7 @@ The [arithmetic mean][arithmetic-mean] is defined as
 ## Usage
 
 ```javascript
-import nanmeanpn from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanmeanpn@esm/index.mjs';
+import nanmeanpn from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanmeanpn@v0.1.1-esm/index.mjs';
 ```
 
 #### nanmeanpn( arrays )
@@ -115,7 +115,7 @@ import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by
 import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@esm/index.mjs';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import nanmeanpn from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanmeanpn@esm/index.mjs';
+import nanmeanpn from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanmeanpn@v0.1.1-esm/index.mjs';
 
 function rand() {
     if ( bernoulli( 0.8 ) < 1 ) {
